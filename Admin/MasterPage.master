@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Admin_MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="../user2/css/bootstrap.css" rel="stylesheet" />
+    <script src="../user2/js/jquery-2.1.4.min.js"></script>
+    <script src="../user2/js/bootstrap.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">NCC</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li class="active"><a href="event_details.aspx">EVENT DETAILS</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">EXAM
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="NCC_exam_details.aspx">Exam Detail</a></li>
+                        <li><a href="online_army_exam_book.aspx">exam book</a></li>
+                        <li><a href="online_demo_paper.aspx">demo paper</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="NCC_camp_update.aspx">Camp Update</a></li>
+                <li><a href="checkroll.aspx">Check Roll No</a></li>
+                <li><a href="view-applicationform.aspx">View Application Form</a></li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">other
+        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="army_rally_info.aspx">Army_info</a></li>
+                        <li><a href="weekly_pared_info.aspx">weekly pared info</a></li>
+                        <li><a href="job_info.aspx">job_info</a></li>
+                        <!-- <li><a href="form.aspx">Form</a></li> -->
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="logout.aspx"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+    </div>
+</body>
+</html>
